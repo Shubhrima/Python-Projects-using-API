@@ -56,8 +56,8 @@ if int(stock_percentage_difference)<5:
     message = client.messages \
         .create(
         body=message_text,
-        from_='+12052368131',
-        to='+919674029417'
+        from_=TWILIO_NUMBER,
+        to=R_M_N
     )
     print(message.status)
 
