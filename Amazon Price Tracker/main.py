@@ -28,3 +28,5 @@ if PRODUCT_PRICE<=150.00:
         connection.login(user=my_mail, password=my_password)
         connection.sendmail(from_addr=my_mail, to_addrs=Reciever , msg=MESSAGE)
         print("Mail Sent")
+else:
+    print('Price not within your Budget')
